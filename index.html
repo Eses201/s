@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monkey GIFs Interaction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #question, #buttons, #monkey-gif {
+            margin: 20px;
+        }
+        #monkey-gif img {
+            max-width: 300px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="question">
+        <h1>Do you wanna go out with me?</h1>
+    </div>
+
+    <div id="monkey-gif">
+        <img src="https://media.tenor.com/bmd2IuBOHt8AAAAC/monkey-shy.gif" alt="Shy Monkey">
+    </div>
+
+    <div id="buttons">
+        <button onclick="showDancingMonkey()">Yes</button>
+        <button>No</button>
+    </div>
+
+    <script>
+        function showDancingMonkey() {
+            // Change the image source to Dancing Monkey GIF
+            document.getElementById("monkey-gif").innerHTML = '<img src="https://media.tenor.com/6-KkdA08LgYAAAAC/dancing-monkey.gif" alt="Dancing Monkey">';
+        }
+    </script>
+
+</body>
+</html>
